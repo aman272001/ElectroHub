@@ -3,9 +3,10 @@
   "devCommand": "npm start",
   "installCommand": "npm install",
   "env": {
-    "DISABLE_ESLINT_PLUGIN": "true"
+    "CI": "false"
   },
-  "env_production": {
+  "envProduction": {
+    "CI": "false",
     "DISABLE_ESLINT_PLUGIN": "true"
   }
 }

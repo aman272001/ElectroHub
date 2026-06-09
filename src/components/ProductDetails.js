@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 
 function ProductDetails({ products, onAddToCart, onDiscount }) {
@@ -88,7 +88,6 @@ function ProductDetails({ products, onAddToCart, onDiscount }) {
   const colors = ['Black', 'Silver', 'White', 'Blue'];
 
   const handleAddToCart = () => {
-    const productToAdd = { ...product, quantity };
     for (let i = 0; i < quantity; i++) {
       onAddToCart(product);
     }
