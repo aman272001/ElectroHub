@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm start",
+  "installCommand": "npm install",
+  "env": {
+    "DISABLE_ESLINT_PLUGIN": "true"
+  },
+  "env_production": {
+    "DISABLE_ESLINT_PLUGIN": "true"
+  }
+}
